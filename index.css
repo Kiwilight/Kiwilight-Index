@@ -1,0 +1,40 @@
+html, body { margin: 4px; padding: 0px;
+  margin-top: 0px; margin-bottom: 0px;
+  font-size: 12px; font-family:
+  'Verdana', 'Helvetica', sans-serif; }
+
+body a img { border: none; }
+a { text-decoration: none; }
+body a:hover {
+  text-decoration: underline; }
+
+.link-to-back- { float: right; }
+.link-to-back img {
+  margin-bottom: 6px;
+  vertical-align: middle; }
+
+address { text-align: center;
+  margin-bottom: 24px; }
+
+table.index { width: 100%;
+  margin-bottom: 12px; }
+tr.hide { display: none; }
+th.icon img, td.icon img {
+  width: 32px; height: 32px }
+th.icon, td.icon {
+  padding-right: 8px;
+  width: 32px;
+  text-align: left; }
+
+th.name { text-align: left; }
+th.date { 
+  padding-left: 8px;
+  width: 128px;
+  text-align: right; }
+th.size {
+  padding-left: 8px;
+  width: 48px;
+  text-align: right; }
+
+tr.item:hover {
+  background-color: #F0F0F0; }
