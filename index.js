@@ -12,7 +12,9 @@ window.observe('load', function(event) {
 
   var lines = table.select('tr');
   lines[0].className = 'head';
-  lines[1].remove();
+  var t = lines[1].down().down();
+  t = t.attributes[0].nodeValue;
+  if (t == '/') lines[1].remove();
   lines = lines.slice(2);
 
   var cells = table.select('th');
