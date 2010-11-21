@@ -1,0 +1,9 @@
+Installation Instruction:
+
+  1. Place the content of this directory into the directory '/opt/kiwiindex'
+
+  2. Include this line in your main `httpd` configuration:
+
+       Include /opt/kiwiindex/index.conf
+
+  3. Ensure that your access policy allows `httpd` to access /opt/kiwiindex
