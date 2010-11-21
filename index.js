@@ -67,4 +67,19 @@ window.observe('load', function(event) {
     var m = text.substring(3, 6);
     cells[3].innerHTML =
       M[m] + ' ' + d + ', ' + y;
-    cells = cells.slice(4); } });
+    cells = cells.slice(4); }
+
+  // Delete to disable AJAX README lookup
+  var handle = function(transport) {
+    var text = transport.responseText;
+    text = text.escapeHTML()
+    var table = $$('table').first();
+    var outer = new Element('div');
+    outer.className = 'outer';
+    var inner = new Element('pre');
+    outer.update(inner.update(text));
+    table.insert({ after: outer }); }
+  new Ajax.Request('README', {
+  method: 'get', onSuccess: handle });
+  // Delete to disable AJAX README lookup
+});

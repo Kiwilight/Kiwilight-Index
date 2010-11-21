@@ -38,3 +38,8 @@ th.size {
 
 tr.item:hover {
   background-color: #F0F0F0; }
+
+pre { display: inline-block;
+  text-align: left;
+  margin: 12px auto 36px; }
+.outer { text-align: center; }

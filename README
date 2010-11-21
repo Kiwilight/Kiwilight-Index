@@ -6,6 +6,10 @@ an HTML header to load a CSS stylesheet and a Javascript file that performs
 the necessary modifications on the document. Because vanilla Javascript is
 worthless the Prototype Javascript framework is also included.
 
+If in a directory index there is a file README then it will be displayed in
+an HTML <pre> block between the index table and the server address. The file
+is fetched using AJAX
+
 Installation Instruction:
 
   1. Place the content of this directory into the directory '/opt/kiwiindex'
