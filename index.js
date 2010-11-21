@@ -10,12 +10,13 @@ window.observe('load', function(event) {
   table.cellPadding = '4px';
   table.className = 'index';
 
-  var lines = table.select('tr');
-  lines[0].className = 'head';
-  var t = lines[1].down().down();
+  var line = table.select('tr');
+  line[0].className = 'head';
+  var t = line[1].down().down();
   t = t.attributes[0].nodeValue;
-  if (t == '/') lines[1].remove();
-  lines = lines.slice(2);
+  if (t == '/') line[1].remove();
+  line.slice(1).each(function(l)
+    { l.className = 'item'; });
 
   var cells = table.select('th');
   var html = cells[3].innerHTML;
@@ -40,9 +41,6 @@ window.observe('load', function(event) {
     Oct: 'October',
     Nov: 'November',
     Dec: 'December' };
-
-  lines.each(function(line) {
-  line.className = 'item'; });
 
   var cells = table.select('td');
   while (cells.length != 0) {
