@@ -1,9 +1,9 @@
 This package uses the Tango icon set supplemented with the GNOME icon set to
 render the directory index in the Apache HTTPd. It coerces the output to a
 nicer format by aligning and sizing each field appropriately and by parsing
-the Last Modified field to re-rendering it in a more natural format. It uses
-an HTML header to load a CSS stylesheet and a Javascript file that performs
-the necessary modifications on the document. Because vanilla Javascript is
+the Last Modified field to re-render it in a more natural format. It uses an
+HTML header to load a CSS stylesheet and a Javascript file that performs the
+necessary modifications on the document. Because vanilla Javascript is
 worthless the Prototype Javascript framework is also included.
 
 If in a directory index there is a file README then it will be displayed in
