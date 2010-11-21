@@ -1,3 +1,11 @@
+This package uses the Tango icon set supplemented with the GNOME icon set to
+render the directory index in the Apache HTTPd. It coerces the output to a
+nicer format by aligning and sizing each field appropriately and by parsing
+the Last Modified field to re-rendering it in a more natural format. It uses
+an HTML header to load a CSS stylesheet and a Javascript file that performs
+the necessary modifications on the document. Because vanilla Javascript is
+worthless the Prototype Javascript framework is also included.
+
 Installation Instruction:
 
   1. Place the content of this directory into the directory '/opt/kiwiindex'
@@ -5,5 +13,7 @@ Installation Instruction:
   2. Include this line in your main `httpd` configuration:
 
        Include /opt/kiwiindex/index.conf
+
+  3. Ensure that mod_autoindex is loaded in your `httpd` configuration.
 
   3. Ensure that your access policy allows `httpd` to access /opt/kiwiindex
