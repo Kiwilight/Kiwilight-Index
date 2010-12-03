@@ -25,6 +25,7 @@ th.icon, td.icon {
   padding-right: 8px;
   width: 32px;
   text-align: left; }
+tr { height: 42px; }
 
 th.name { text-align: left; }
 th.date { 
