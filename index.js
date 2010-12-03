@@ -5,6 +5,15 @@ window.observe('load', function(event) {
     window.location.pathname;
   title.innerHTML = document.title;
 
+  var referrer = document.referrer;
+  var suffix = '/directory/';
+  var setter = function(link) {
+    link.href = referrer; }
+  var selector = 'link-to-back';
+  if (referrer.endsWith(suffix) &&
+    document.URL.match('~'))
+   $$('.' + selector).each(setter);
+
   var table = $$('table').first();
   table.cellSpacing = '0px';
   table.cellPadding = '4px';
