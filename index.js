@@ -79,6 +79,7 @@ window.observe('load', function(event) {
     cells = cells.slice(4); }
 
   // Delete to disable AJAX README lookup
+  /*
   var handle = function(transport) {
     var text = transport.responseText;
     text = text.escapeHTML()
@@ -90,5 +91,6 @@ window.observe('load', function(event) {
     table.insert({ after: outer }); }
   new Ajax.Request('README', {
   method: 'get', onSuccess: handle });
+  */
   // Delete to disable AJAX README lookup
 });

@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=480px;" />
     <title>Index for /directory/</title>
     <link href="/kiwiindex/index.css" rel="stylesheet" type="text/css" />
   </head>
